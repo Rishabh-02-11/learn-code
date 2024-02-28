@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid layout</title>
+    <style>
+      .GridContainer > div {
+        border: 1px solid black;
+        text-align: center;
+      }
+      .GridContainer {
+        display: grid;
+        gap:10px;
+        grid-template-columns: repeat(4, 100px);
+        grid-template-rows: repeat(3, 100px);
+      }
+      .Item1 {
+        background-color: green;
+        grid-row: 1/3 span;
+      }
+      .Item2 {
+        background-color: green;
+        grid-column: 2/2 span;
+      }
+      .Item3,
+      .Item5,
+      .Item7 {
+        background-color: red;
+      }
+      .Item4,
+      .Item8 {
+        background-color: yellow;
+      }
+      .Item6 {
+        background-color: green;
+        grid-row: 2/2 span;
+        grid-column:4;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="GridContainer">
+      <div class="Item1">1</div>
+      <div class="Item2">2</div>
+      <div class="Item3">3</div>
+      <div class="Item4">4</div>
+      <div class="Item5">5</div>
+      <div class="Item6">6</div>
+      <div class="Item7">7</div>
+      <div class="Item8">8</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Sizing</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        div {
+            box-sizing: border-box;
+            border: 1px solid black;
+            width: 100px;
+            height: 100px;
+        }
+        .red {
+            background-color: red;
+            margin: 10px;
+        }
+        .blue {
+            padding: 10px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="red">Item 1</div>
+    <div class="blue">Item 2</div>
+</body>
+</html>
