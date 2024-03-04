@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(35, 9, 121);
+  background: radial-gradient(
+    circle,
+    rgba(35, 9, 121, 1) 32%,
+    rgba(2, 0, 36, 1) 76%
+  );
+  color: skyblue;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  margin: 240px;
+  background-color: black;
+  padding: 60px 80px;
+  border-radius: 20px;
+}
+
+.container > h1 {
+  font-size: 60px;
+}
