@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#calculator {
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(6, 100px);
+}
+
+#calculator > input {
+    background-color: black;
+    font-size: xx-large;
+    text-align: right;
+    padding: 40px;
+    color: white;
+    border: none;
+    outline: none;
+    grid-column: 1/ 4 span;
+}
+
+#calculator > button {
+    background-color: black;
+    border: none;
+    color: white;
+    font-size: x-large;
+}
